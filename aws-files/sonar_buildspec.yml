@@ -1,15 +1,15 @@
 version: 0.2
 env:
   parameter-store:
-    LOGIN: LOGIN
+    LOGIN: sonartoken
     HOST: HOST
     Organization: Organization
     Project: Project
-    CODEARTIFACT_AUTH_TOKEN: CODEARTIFACT_AUTH_TOKEN
+    CODEARTIFACT_AUTH_TOKEN: codeartifact-token
 phases:
   install:
     runtime-versions:
-      java: corretto8
+      java: openjdk8
     commands:
     - cp ./settings.xml /root/.m2/settings.xml
   pre_build:
