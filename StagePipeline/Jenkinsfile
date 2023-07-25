@@ -10,15 +10,15 @@ pipeline {
         NEXUS_PASS = 'Bluebird@2024'
 		RELEASE_REPO = 'vprofile-release'
 		CENTRAL_REPO = 'vpro-maven-central'
-        NEXUSIP = '172.31.95.220'
+        NEXUSIP = '172.31.11.55'
 		NEXUSPORT = '8081'
         NEXUS_GRP_REPO = 'vpro-maven-group'
         NEXUS_LOGIN = 'nexuslogin'
         SONARSERVER = 'sonarserver'
         SONARSCANNER = 'sonarscanner'
-        registryCredential = 'ecr:us-east-1:awscreds'
-        appRegistry = '404705190785.dkr.ecr.us-east-1.amazonaws.com/vprofileappimg'
-        vprofileRegistry = "https://404705190785.dkr.ecr.us-east-1.amazonaws.com/vprofileappimg"
+        registryCredential = 'ecr:us-east-2:awscreds'
+        appRegistry = '306434374998.dkr.ecr.us-east-2.amazonaws.com/vprofileappimg'
+        vprofileRegistry = "https://306434374998.dkr.ecr.us-east-2.amazonaws.com/vprofileappimg"
     }
 	
      stages {
